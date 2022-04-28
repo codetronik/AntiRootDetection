@@ -9,10 +9,11 @@ Root permission is required to execute the Loadable kernel module.
 
 ## Build Enviroment
 - Download and build kernel sources such as Lineage OS.
-  - Build guide : https://codetronik.tistory.com/?page=2
+  - Build guide : https://codetronik.tistory.com/151
 - Android cross compiler is required.
   - Download : https://github.com/Shubhamvis98/toolchains
 - Open the Makefile and modify the kernel source path and compiler path.
+- make
 
 ## Output
 - Loadable kernel module (.ko)
