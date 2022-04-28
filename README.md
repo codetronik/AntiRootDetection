@@ -1,6 +1,7 @@
 # Android Anti Root Detection
 
 It bypasses Root detection from the app (such as Game or Banking)
+
 Root permission is required to execute the Loadable kernel module.
 
 ## Features
