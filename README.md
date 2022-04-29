@@ -6,6 +6,7 @@ Root permission is required to execute the Loadable kernel module.
 
 ## Features
 - When the app searches for root-related files, it returns a fake file or path.
+  - Set your target apps at is_target_process() in main.c
 - Provides a fake su that is used when su is not installed. (type fakesu in shell)
 
 ## Build Enviroment
@@ -17,7 +18,6 @@ Root permission is required to execute the Loadable kernel module.
 
 ## Output
 - Loadable kernel module (.ko)
-
 
 ## Execution Error Types
 The error type can be checked with the dmesg command.
