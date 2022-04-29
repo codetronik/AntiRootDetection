@@ -18,6 +18,21 @@ Root permission is required to execute the Loadable kernel module.
 ## Output
 - Loadable kernel module (.ko)
 
+
+## Execution Error Type
+The error type can be checked with the dmesg command.
+- failed to load hook.ko: Invalid argument
+  - (dmesg) disagrees about version of symbol printk
+  - (demsg) Unknown symbol printk (err -22)
+    - When compiling a kernel, the compiler should use Android-aarch. If it is not for Android, an error occurs.
+- failed to load hook.ko: Exec format error
+  - (dmesg) disagrees about version of symbol module_layout
+    - The kernel module and kernel version must be completely matched.
+
+- failed to load hook.ko: Exec format error
+  - (dmesg) LKM is not allowed by Samsung security policy.
+    - LKM is not allowed in Samsung mobile phones :: In this case, bypass it or install Lineage OS
+
 ## Test Environment
 AARCH64 (ARM64)
 - Galaxy Tab S6 Lite (Android 11) / Lineage OS 18.1
