@@ -24,12 +24,11 @@ The error type can be checked with the dmesg command.
 - failed to load hook.ko: Invalid argument
   - (dmesg) disagrees about version of symbol printk
   - (demsg) Unknown symbol printk (err -22)
-    - When compiling a kernel, the compiler should use Android-aarch. If it is not for Android, an error occurs.
-    
+    - When compiling a kernel, the compiler should use Android-aarch.
 - failed to load hook.ko: Exec format error
   - (dmesg) disagrees about version of symbol module_layout
-    - The kernel module and kernel version must be completely matched.
-
+    - Kernel and Loadable kernel module versions must match perfectly.
+    - modinfo hook.ko and uname -r in your mobile device.
 - failed to load hook.ko: Exec format error
   - (dmesg) LKM is not allowed by Samsung security policy.
     - LKM is not allowed in Samsung mobile phones :: In this case, bypass it or install Lineage OS
